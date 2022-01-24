@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+  
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            <input type="text" name="screen" id="screen" autofocus />
+        </div>
+        <div class="rounded-btn">
+            <input type="button" class="on-btn" id="on" value="ON/AC" onclick="on()" />
+            <input type="button" value="Clear" />
+            <input type="button" value="&#8592;" />
+            <input type="button" value="&#247;" id="divide-btn" onclick="typeDivision()"/>
+        </div>
+        <div class="rounded-btn">
+            <input type="button" class="off-btn" id="off" value="OFF" onclick="off()" />
+            <input type="button" value="M+" />
+            <input type="button" value="M-" />
+            <input type="button" value="&#215;" id="multiply-btn" onclick="typeMultiplication()" />
+        </div>
+        <div class="circled-btn">
+            <input type="button" value="7" onclick="typeSeven()"/>
+            <input type="button" value="8" onclick="typeEight()"/>
+            <input type="button" value="9" onclick="typeNine()"/>
+            <input type="button" value="&#8722;" id="minus-btn" onclick="typeMinus()"/>
+        </div>
+        <div class="circled-btn" />
+            <input type="button" value="4" onclick="typeFour()"/>
+            <input type="button" value="5" onclick="typeFive()"/>
+            <input type="button" value="6" onclick="typeSix()"/>
+            <input type="button" value="&#43;" id="plus-btn" onclick="typePlus()"/>
+        </div>
+        <div class="circled-btn">
+            <input type="button" value="1" onclick="typeOne()"/>
+            <input type="button" value="2" onclick="typeTwo()"/>
+            <input type="button" value="3" onclick="typeThree()"/>
+            <input type="button" value="&#37;" id="percentage-btn" onclick="typePercentage()"/>
+        </div>
+        <div class="circled-btn" />
+            <input type="button" value="0" onclick="typeZero()"/>
+            <input type="button" value="00" onclick="typeDoubleZero()"/>
+            <input type="button" value="&#8901;" id="point-btn" onclick="typePoint()" />
+            <input type="button" value="&#61;" id="calculate-btn" onclick="getAnswer()"/>
+        </div>
+
+    </div>
+    <script type="text/javascript"  src="./js/script.js"></script>
+</body>
+
+</html>
